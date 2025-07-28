@@ -1,6 +1,6 @@
 OpenCore EFI для Lenovo IdeaPad Slim 3 16ABR8
 
-🇬🇧 {Read in English}{./Readme.md}
+🇬🇧[Read in English](./Readme.md)
 
 EFI для запуска macOS на Lenovo IdeaPad Slim 3 16ABR8 (AMD Ryzen 7 7730U).
 Оптимизировано для macOS 11 Big Sur — стабильная работа с поддержкой большинства компонентов.
