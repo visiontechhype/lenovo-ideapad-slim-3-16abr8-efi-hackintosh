@@ -1,5 +1,3 @@
-<p align="center">
-  <img src="./macos.jpg" alt="About of system" width="45%"/>
 OpenCore EFI для Lenovo IdeaPad Slim 3 16ABR8
 
 🇬🇧[Read in English](./README.md)
