@@ -31,6 +31,7 @@ Monterey (12): Installer freezes at around 13–12 minutes remaining
 Ventura (13+) and newer: Cannot install or boot
 
 Not working:
+
 • Built-in camera (unsupported)
 
 • Wi‑Fi and Bluetooth (unsupported chipset)
