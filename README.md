@@ -1,6 +1,5 @@
 <p align="center">
-  <img src="./macos.jpg" alt="About of system" width="45%"/>
-  <img src="./Lenovo.webp" alt="Lenovo IDEAPAD Slim 3 16ABR8" width="45%"/>
+  <img src="./macos.jpg" alt="macOS Big Sur on Lenovo IdeaPad Slim 3" width="80%"/>
 </p>
 OpenCore EFI for Lenovo IdeaPad Slim 3 16ABR8
 
