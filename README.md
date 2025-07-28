@@ -32,7 +32,9 @@ Ventura (13+) and newer: Cannot install or boot
 
 Not working:
 • Built-in camera (unsupported)
+
 • Wi‑Fi and Bluetooth (unsupported chipset)
+
 • Battery percentage indicator (requires additional kext; planned for future updates)
 
 
@@ -56,7 +58,9 @@ Compatibility Table:
 macOS Version	Status	Notes
 
 Big Sur 11	✅ Fully Supported	Stable and functional
+
 Monterey 12	⚠️ Installation hangs	Freezes at around 13–12 minutes remaining
+
 Ventura 13+	❌ Unsupported	Cannot install or boot
 
 
