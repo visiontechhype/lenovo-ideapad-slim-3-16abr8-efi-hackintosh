@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./Bigsur.jpeg" alt="About of system" width="45%"/>
+  <img src="./Bigsur.jpg" alt="About of system" width="45%"/>
   <img src="./Lenovo.webp" alt="Lenovo IDEAPAD Slim 3 16ABR8" width="45%"/>
 </p>
 OpenCore EFI for Lenovo IdeaPad Slim 3 16ABR8
