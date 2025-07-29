@@ -39,7 +39,6 @@ Not working:
 
 • Wi‑Fi and Bluetooth (unsupported chipset)
 
-• Battery percentage indicator (requires additional kext; planned for future updates)
 
 
 
@@ -49,11 +48,7 @@ Installation Notes:
 
 Press Space in the OpenCore boot picker to reveal macOS installers
 
-Battery percentage is currently not visible due to missing driver support
-
 EFI may be updated in the future to improve hardware compatibility
-
-
 
 ---
 
@@ -78,6 +73,3 @@ A: Monterey and later versions currently fail due to unresolved compatibility is
 
 Q: Will Wi‑Fi or Bluetooth be supported?
 A: Not with the current hardware; chipset drivers are not available.
-
-Q: Battery percentage is missing — can I fix it?
-A: Requires an additional kext, planned for a future EFI update.
