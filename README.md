@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./macos.jpg" alt="macOS Big Sur on Lenovo IdeaPad Slim 3" width="80%"/>
 </p>
----
+
 
 ### Note:
 Currently testing **macOS Catalina (10.15)** — Recovery environment successfully boots.  
