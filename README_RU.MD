@@ -2,7 +2,7 @@
 
 > 📌 Это русская версия файла README.
 
-📄 English version is available here: [Readme.md](README.md)
+>🇺🇲 English version is available here: [Readme.md](README.md)
  
 
 
