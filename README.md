@@ -2,7 +2,8 @@
 🇬🇧 README — EFI for Lenovo IdeaPad Slim 3 16ABR8 (macOS Monterey only)
 
 > 📌 This is the English version of the README.
-📄 Русская версия доступна здесь: [README_RU.md](README_RU.md)
+
+>🇷🇺 Русская версия доступна здесь: [README_RU.md](README_RU.md)
 
 
 
