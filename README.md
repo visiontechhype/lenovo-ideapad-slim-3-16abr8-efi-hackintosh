@@ -1,77 +1,102 @@
-<p align="center">
-  <img src="./macos.jpg" alt="macOS Big Sur on Lenovo IdeaPad Slim 3" width="80%"/>
-</p>
-OpenCore EFI for Lenovo IdeaPad Slim 3 16ABR8
 
-🇷🇺[Прочитать на русском](README_RU.MD)
+🇬🇧 README — EFI for Lenovo IdeaPad Slim 3 16ABR8 (macOS Monterey only)
 
-EFI configuration for running macOS on Lenovo IdeaPad Slim 3 16ABR8 (AMD Ryzen 7 7730U).
-Designed and tested for macOS 11 Big Sur — stable performance with most hardware supported.
+> 📌 This is the English version of the README.
+📄 Русская версия доступна здесь: [README_RU.md](README_RU.md)
 
 
----
 
-Features:
-
-Battery support in macOS (charge level display)
-
-Fully functional macOS 11 Big Sur installation
-
-Stable CPU and iGPU graphics acceleration
-
-Working audio, keyboard, trackpad, USB, and storage
-
-Proper sleep, wake, and power management
-
+This EFI is intended only for macOS Monterey.
+While macOS Big Sur installation is technically possible, this EFI is specifically configured and tested for Monterey.
 
 
 ---
 
-Limitations:
+💻 Laptop specifications:
 
-Supported macOS: Big Sur (11) only
+Model: Lenovo IdeaPad Slim 3 16ABR8
 
-Monterey (12): Installer freezes at around 13–12 minutes remaining
+CPU: AMD Ryzen 7 7730U (Zen 2)
 
-Ventura (13+) and newer: Cannot install or boot
+Graphics: AMD Radeon Vega 8
 
-Not working:
+Audio: Realtek ALC257 ✅
 
-• Built-in camera (unsupported)
+Camera: Built-in ✅
 
-• Wi‑Fi and Bluetooth (unsupported chipset)
+Wi-Fi / Bluetooth: MediaTek MT7921 ❌
 
+Bootloader: OpenCore 1.0.5
+
+Supported macOS: macOS Monterey (12.x)
 
 
 
 ---
 
-Installation Notes:
+🧩 Included SSDTs:
 
-Press Space in the OpenCore boot picker to reveal macOS installers
+SSDT-EC
 
-EFI may be updated in the future to improve hardware compatibility
+SSDT-PLUG-ALT
 
----
+SSDT-USBX
 
-Compatibility Table:
-
-macOS Version	Status	Notes
-
-Big Sur 11	✅ Fully Supported	Stable and functional
-
-Monterey 12	⚠️ Installation hangs	Freezes at around 13–12 minutes remaining
-
-Ventura 13+	❌ Unsupported	Cannot install or boot
+SSDT-XOSI
 
 
 
 ---
 
-FAQ:
+✅ What works:
 
-Q: Why only Big Sur?
-A: Monterey and later versions currently fail due to unresolved compatibility issues. Big Sur remains the most stable release for this hardware.
+Full hardware graphics acceleration (Vega 8)
 
-Q: Will Wi‑Fi or Bluetooth be supported?
-A: Not with the current hardware; chipset drivers are not available.
+Audio (via alcid=11)
+
+Built-in camera
+
+USB ports (configured via SSDT-USBX)
+
+Smooth interface and animations
+
+Stable installation and boot process
+
+
+
+---
+
+⚠️ What does not work:
+
+❌ Wi-Fi and Bluetooth are not supported — MediaTek MT7921 is not macOS-compatible
+
+🔌 Internet access is available only via USB tethering from a phone
+The required HoRNDIS.kext is already included in this EFI
+
+🔅 Brightness hotkeys might not work yet (currently being addressed)
+
+🖥️ On the initial setup of macOS Monterey, you may see a welcome screen with white side borders — this is normal behavior, not a bug
+
+
+
+---
+
+⚙️ Boot arguments (NVRAM boot-args):
+
+-v debug=0x100 keepsyms=1 npci=0x2000 -cdfon -vi2c-force-polling amfi_get_out_of_my_way=1 acpi_layer=1 alcid=11
+
+
+---
+
+📁 EFI structure:
+
+EFI
+├── BOOT
+│   └── BOOTx64.efi
+└── OC
+  ├── ACPI
+  ├── Drivers
+  ├── Kexts
+  ├── Tools
+  ├── config.plist
+  └── OpenCore.efi
