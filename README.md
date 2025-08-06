@@ -13,6 +13,8 @@ Designed and tested for macOS 11 Big Sur — stable performance with most hardwa
 
 Features:
 
+Battery support in macOS (charge level display)
+
 Fully functional macOS 11 Big Sur installation
 
 Stable CPU and iGPU graphics acceleration
