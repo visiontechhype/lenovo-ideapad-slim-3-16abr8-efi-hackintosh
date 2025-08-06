@@ -12,6 +12,7 @@ EFI для запуска macOS на Lenovo IdeaPad Slim 3 16ABR8 (AMD Ryzen 7 7
 ---
 
 Возможности:
+
 Поддержка батареи в macOS (отображение заряда)
 
 Полностью работоспособная установка macOS 11 Big Sur
