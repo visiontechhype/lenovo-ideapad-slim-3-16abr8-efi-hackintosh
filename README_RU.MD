@@ -82,9 +82,9 @@ USB-порты (через SSDT-USBX)
 ---
 
 ⚙️ Аргументы загрузки (boot-args в NVRAM):
-
+```
 -v debug=0x100 keepsyms=1 npci=0x2000 -cdfon -vi2c-force-polling amfi_get_out_of_my_way=1 acpi_layer=1 alcid=11
-
+```
 
 ---
 
