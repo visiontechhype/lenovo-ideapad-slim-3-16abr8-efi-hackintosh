@@ -83,21 +83,21 @@ The required HoRNDIS.kext is already included in this EFI
 ---
 
 ⚙️ Boot arguments (NVRAM boot-args):
-
+```
 -v debug=0x100 keepsyms=1 npci=0x2000 -cdfon -vi2c-force-polling amfi_get_out_of_my_way=1 acpi_layer=1 alcid=11
-
+```
 
 ---
 
 📁 EFI structure:
-
+```
 EFI
 ├── BOOT
 │   └── BOOTx64.efi
 └── OC
-  ├── ACPI
-  ├── Drivers
-  ├── Kexts
-  ├── Tools
-  ├── config.plist
-  └── OpenCore.efi
+  ├── ACPI
+  ├── Drivers
+  ├── Kexts
+  ├── Tools
+  ├── config.plist
+  └── OpenCore.efi
