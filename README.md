@@ -75,7 +75,7 @@ Stable installation and boot process
 
 ❌ Wi-Fi and Bluetooth are not supported — MediaTek MT7921 is not macOS-compatible
 
-🔌 Internet access is available only via USB tethering from a phone
+Notes: Internet access is available only via USB tethering from a phone
 The required HoRNDIS.kext is already included in this EFI
 
 
