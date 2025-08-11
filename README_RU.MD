@@ -1,4 +1,4 @@
-🇷🇺 README — EFI для Lenovo IdeaPad Slim 3 16ABR8 (только macOS 26 Tahoe)
+🇷🇺 README — EFI для Lenovo IdeaPad Slim 3 16ABR8 (macOS Tahoe и macOS Sequioa)
 
 > 📌 Это русская версия файла README.
 
@@ -23,7 +23,7 @@ Wi-Fi / Bluetooth: MediaTek MT7921 ❌
 
 Загрузчик: OpenCore 1.0.5
 
-Поддерживаемая версия macOS: macOS Tahoe (26.x)
+Поддерживаемая версия macOS: macOS Sequioa (15.x), macOS Tahoe (26.x)
 
 
 
