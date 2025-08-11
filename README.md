@@ -1,14 +1,9 @@
 
-🇬🇧 README — EFI for Lenovo IdeaPad Slim 3 16ABR8 (macOS Monterey only)
+🇬🇧 README — EFI for Lenovo IdeaPad Slim 3 16ABR8 (macOS 26 Tahoe)
 
 > 📌 This is the English version of the README.
 
 >🇷🇺 Русская версия доступна здесь: [README_RU.md](README_RU.MD)
-
-
-
-This EFI is intended only for macOS Monterey.
-While macOS Big Sur installation is technically possible, this EFI is specifically configured and tested for Monterey.
 
 
 ---
@@ -29,7 +24,7 @@ Wi-Fi / Bluetooth: MediaTek MT7921 ❌
 
 Bootloader: OpenCore 1.0.5
 
-Supported macOS: macOS Monterey (12.x)
+Supported macOS: macOS Tahoe (26.x)
 
 
 
@@ -37,9 +32,19 @@ Supported macOS: macOS Monterey (12.x)
 
 🧩 Included SSDTs:
 
+SSDT-ALS0
+
+SSDT-Disable_Network_GPP4
+
 SSDT-EC
 
 SSDT-PLUG-ALT
+
+SSDT-PNLF
+
+SSDT-RMNE
+
+SSDT-USB-Reset
 
 SSDT-USBX
 
@@ -57,7 +62,7 @@ Audio (via alcid=11)
 
 Built-in camera
 
-USB ports (configured via SSDT-USBX)
+USB ports 
 
 Smooth interface and animations
 
@@ -74,17 +79,12 @@ Stable installation and boot process
 🔌 Internet access is available only via USB tethering from a phone
 The required HoRNDIS.kext is already included in this EFI
 
-🔅 Brightness hotkeys might not work yet (currently being addressed)
-
-🖥️ On the initial setup of macOS Monterey, you may see a welcome screen with white side borders — this is normal behavior, not a bug
-
-
 
 ---
 
 ⚙️ Boot arguments (NVRAM boot-args):
 ```
--v debug=0x100 keepsyms=1 npci=0x2000 -cdfon -vi2c-force-polling amfi_get_out_of_my_way=1 acpi_layer=1 alcid=11
+-v debug=0x100 keepsyms=1 npci=0x3000 -vi2c-force-polling alcid=11 revpatch=sbvmm amfi_get_out_of_my_way=1
 ```
 
 ---
